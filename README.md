@@ -1,20 +1,16 @@
-# Apex Planet Internship – Task 2
-UI/UX Design and Implementation (Android – Kotlin)
+Apex Planet Internship – Android Development
 
-## 📱 Features
-- Login Screen UI
-- Input validation
-- Navigation to Home Screen
-- Responsive layout
-- Clean UI design
+Task 2: UI/UX Implementation
+Implemented login screen and home screen using XML layouts.
 
-## 🛠 Tech Used
+Task 3: Backend Integration and API Development
+Integrated REST API using Retrofit.
+Fetched posts from API and displayed them using RecyclerView.
+
+Technologies Used:
 - Kotlin
-- XML Layout
+- Retrofit
+- RecyclerView
 - Android Studio
-
-## 📷 Screenshots
-(Add emulator screenshots here)
-
 ## 👨‍💻 Developed By
 Shaik Shafi
