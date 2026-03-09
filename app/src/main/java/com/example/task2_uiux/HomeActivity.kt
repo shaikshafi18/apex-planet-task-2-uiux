@@ -1,6 +1,8 @@
 package com.example.task2_uiux
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -10,14 +12,26 @@ import retrofit2.Response
 
 class HomeActivity : AppCompatActivity() {
 
-    lateinit var recyclerView: RecyclerView
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var logoutBtn: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
         recyclerView = findViewById(R.id.recyclerView)
+        logoutBtn = findViewById(R.id.btnLogout)
+
         recyclerView.layoutManager = LinearLayoutManager(this)
+
+        // Logout Button Logic
+        logoutBtn.setOnClickListener {
+
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
+            finish()
+        }
 
         val api = RetrofitClient.instance
 
